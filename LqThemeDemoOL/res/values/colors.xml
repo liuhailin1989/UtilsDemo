@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="halftransparent">#66000000</color>
+    <color name="applying_white">#ffcccccc</color>
+    <color name="back_bg_pressed">#33000000</color>
+    <color name="theme_apply_normal">#ff41b689</color>
+    <color name="theme_apply_pressed">#ff349770</color>
+    <color name="theme_more_normal">#ffffffff</color>
+    <color name="theme_more_v21_pressed">#ffb6b6b6</color>
+    <!-- new added -->
+    <color name="share_title">#5f5f5f</color>
+    <color name="common_brand">#FF6870E9</color>
+    <color name="common_background">#FFF1F1F1</color>
+    <color name="common_title">#6b6b6b</color>
+    <color name="common_subtitle">#b6b6b6</color>
+    <color name="btn_normal">#FF6870E9</color>
+    <color name="btn_pressed">#FF5760ec</color>
+    <color name="list_item_pressed">#f3f3f3</color>
+    <!-- Loading -->
+    <color name="triangle">#bb72d572</color>
+    <color name="circle">#bb6870E9</color>
+    <color name="rect">#bbe84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#30808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <!-- dialog -->
+    <color name="dialog_content">#B2000000</color>
+    <color name="btn_ok_pressed">#FF32AD31</color>
+    <color name="title">#6b6b6b</color>
+    <color name="card_img_bg">#fff8f8f8</color>
+    <!-- MainActivity -->
+    <color name="main_contaniner">#FFF1F1F1</color>
+    <color name="toolbar_layout">#6870e9</color>
+    <color name="theme_apply_btn">#ffffffff</color>
+    <color name="download_view_color">#a9a9a9</color>
+    <color name="solo_download_txv_color">#5375fc</color>
+    <color name="solo_launcher_text_color">#343434</color>
+    <color name="loading_prompttv_textcolor">#757575</color>
+    <color name="download_confirm_color">#343434</color>
+    
+    <color name="holo_blue">#FF33E5B5</color>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.lqdemo"
+    android:versionCode="2"
+    android:versionName="1.0.2.20151207" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name = "android.permission.SET_WALLPAPER"/>
+
+    <!-- jie tu -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    <!--  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+	<uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <application
+        android:allowBackup="true"
+        android:name="com.android.lqdemo.app.DemoApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.lqdemo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.android.lqdemo.statusbar.StatusBarActivity"
+            android:label="@string/app_name" >
+         </activity>
+          <activity
+            android:name="com.android.lqdemo.listview.MyTestListViewActivity"
+            android:label="@string/app_name" >
+         </activity>
+          <activity
+            android:name="com.android.lqdemo.pullscrollview.PullActivity"
+            android:label="@string/app_name" >
+         </activity>
+         
+          <!-- flurry start -->
+          <activity
+            android:name="com.android.lqdemo.flurry.FlurryMainActivity"
+            android:label="@string/app_name" >
+         </activity>
+          <!-- flurry end -->
+          <activity
+            android:name="com.android.lqdemo.pageeffects.PageEffectsActivity"
+            android:label="@string/app_name" >
+         </activity>
+         
+         <activity
+            android:name="com.android.lqdemo.pulltorefreshview.PullToRefreshActivity"
+            android:label="@string/app_name" >
+         </activity>
+          <activity
+            android:name="com.android.lqdemo.animationdrawable.AnimationDrawableActivity"
+            android:label="@string/app_name" >
+         </activity>
+         
+          <receiver android:name="com.android.lqdemo.widget.LqWidgetProvider"
+                    android:label="@string/app_name">  
+             <intent-filter>  
+                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>  
+                 <!-- 自定义action -->  
+                 <action android:name="com.android.lqdemo.widget.UPDATE_ALL"/>  
+             </intent-filter>  
+             <meta-data android:name="android.appwidget.provider"
+                 android:resource="@xml/widget_info"/>
+                 <!--  android:resource="" 定义了Widget的信息使用timer_widget_provider.xml描述 -->  
+          </receiver>  
+          
+    <!-- service -->
+     <service android:name="com.android.lqdemo.capturescreen.Service1">
+     </service>
+    </application>
+
+</manifest>

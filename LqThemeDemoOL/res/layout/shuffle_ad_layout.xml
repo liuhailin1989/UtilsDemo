@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/resultpage_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ad_image"
+                style="@style/card_item_iv"
+                android:layout_height="@dimen/ad_image_height"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ad_flag"
+                android:layout_width="@dimen/ad_flag_width"
+                android:layout_height="@dimen/ad_flag_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ad" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ad_container_content_paddingbottom" >
+
+            <TextView
+                android:id="@+id/content"
+                style="@style/TextView.Content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ad_content_height"
+                android:layout_margin="@dimen/ad_content_margin"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="3" />
+
+            <TextView
+                android:id="@+id/button_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_apply_height"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/content"
+                android:layout_marginLeft="@dimen/button_apply_margin"
+                android:layout_marginRight="@dimen/button_apply_margin"
+                android:background="@drawable/selector_theme_apply_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_ad_large_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
